@@ -52,7 +52,6 @@ table {
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -75,6 +74,7 @@ body {
   top: 50%;
   padding: 0 10px;
   width: 100%;
+  height: auto;
   text-align: center;
 }
 h2 {
@@ -93,11 +93,94 @@ h1::after {
   margin: 30px auto;
   line-height: 1.1;
 }
-p {
-  margin: 0 0 30px 0;
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+
+.header {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 10;
 }
+
+.divider {
+  width: 50%;
+  background-color: #E83951;
+  border-color: #E83951;
+}
+
+.btn-neon-blue {
+  font-family: 'Syncopate', sans-serif;
+  background-color: #3fc399;
+  color: white;
+}
+
+.btn-neon-blue:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+.project-card {
+  width: 60%;
+  position: relative;
+}
+
+.project-card .card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-header {
+  border-bottom: 1px solid #3fc399!important;
+}
+
+.card-footer {
+  border-top: 1px solid #3fc399!important;
+}
+
+.tech-icon {
+  padding: 5px;
+}
+
+.tech-icon i {
+  font-size: 1.2rem;
+}
+
+.tech-icon span {
+  font-size: 0.8rem;
+} 
+
+.breadcrumb {
+  margin: 0 auto;
+  background: transparent;
+}
+
+.breadcrumb li a {
+  color: #3fc399!important;
+}
+
+.card-deck {
+  justify-content: space-between;
+}
+
+.card-deck .card {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) and (max-width: 770px) {
+  .card-deck .card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 770px)
+{
+  .card-deck .card {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 48%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
 
 @media only screen and (max-width: 1000px) {
   h1 {
